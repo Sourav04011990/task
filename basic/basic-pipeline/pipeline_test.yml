@@ -1,0 +1,15 @@
+--- 
+jobs: 
+  - 
+    name: job-test
+    plan: 
+      - 
+        config: 
+          image_resource: 
+            source: 
+              repository: busybox
+            type: docker-image
+          platform: linux
+          run: ~
+        path: /home/centos/test.sh
+    public: true
